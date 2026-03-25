@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "МТИ СИНЕРГИЯ — AI Решатель",
+  "version": "4.18",
+  "description": "Решает тесты МТИ/Синергия с помощью AI (Claude / GPT)",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://mti-solver-v5.danildev.workers.dev/*"
+  ],
+  "background": {
+    "service_worker": "background/service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/assessments/*"],
+      "js": ["content/content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16":  "icons/icon16.png",
+    "48":  "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
