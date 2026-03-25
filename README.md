@@ -54,6 +54,18 @@ Settings stored in `chrome.storage.local`: token, subject context, selected mode
 
 **TSV log** — after each test, generates a TSV line (for Google Sheets) with question count, correct answers, discipline, model, duration, and per-question breakdown.
 
+## Stats
+
+Collected across 85 test runs, 1036 questions total:
+
+| Metric | Value |
+|--------|-------|
+| Overall accuracy | 74% |
+| Tests scored 90%+ | 23% |
+| Tests scored 100% | 6 |
+
+Top subject areas: Economics/Management (47%), Law (15%), Psychology (15%).
+
 ## Installation
 
 1. Open `chrome://extensions/` → enable Developer mode
